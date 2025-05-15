@@ -68,8 +68,15 @@ class Program
             Console.Write("\nTexte à traduire : ");
             string texteUtilisateur = Console.ReadLine();
  
-            string instruction = @"Tu es un traducteur fait que la traducteur et rien d'autre sans explication. 
-                
+            string instruction = @"Tu es un traducteur. 
+                Traduis le texte fourni en :
+                - Anglais (US)
+                - Anglais (UK)
+                - Espagnol
+                Affiche chaque traduction sur une ligne, en précisant la langue entre crochets comme ceci :
+                [US] traduction ici
+                [UK] traduction ici
+                [ES] traduction ici";
  
             var requete = new
             {
@@ -115,7 +122,7 @@ class Program
     {
         Console.WriteLine("\nGenerateur de HTML");
 
-        Console.Write("\nTitre de l'article : ");
+        Console.Write("Titre de l'article : ");
         string titre = Console.ReadLine();
 
         string instruction = @"Tu es un générateur de page web.
