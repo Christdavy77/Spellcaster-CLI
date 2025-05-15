@@ -1,0 +1,23 @@
+/Users/christbrou/Spellcaster CLI/bin/Debug/net8.0/Spellcaster CLI
+/Users/christbrou/Spellcaster CLI/bin/Debug/net8.0/Spellcaster CLI.deps.json
+/Users/christbrou/Spellcaster CLI/bin/Debug/net8.0/Spellcaster CLI.runtimeconfig.json
+/Users/christbrou/Spellcaster CLI/bin/Debug/net8.0/Spellcaster CLI.dll
+/Users/christbrou/Spellcaster CLI/bin/Debug/net8.0/Spellcaster CLI.pdb
+/Users/christbrou/Spellcaster CLI/obj/Debug/net8.0/Spellcaster CLI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christbrou/Spellcaster CLI/obj/Debug/net8.0/Spellcaster CLI.AssemblyInfoInputs.cache
+/Users/christbrou/Spellcaster CLI/obj/Debug/net8.0/Spellcaster CLI.AssemblyInfo.cs
+/Users/christbrou/Spellcaster CLI/obj/Debug/net8.0/Spellcaster CLI.csproj.CoreCompileInputs.cache
+/Users/christbrou/Spellcaster CLI/obj/Debug/net8.0/Spellcaster CLI.sourcelink.json
+/Users/christbrou/Spellcaster CLI/obj/Debug/net8.0/Spellcaster CLI.dll
+/Users/christbrou/Spellcaster CLI/obj/Debug/net8.0/refint/Spellcaster CLI.dll
+/Users/christbrou/Spellcaster CLI/obj/Debug/net8.0/Spellcaster CLI.pdb
+/Users/christbrou/Spellcaster CLI/obj/Debug/net8.0/Spellcaster CLI.genruntimeconfig.cache
+/Users/christbrou/Spellcaster CLI/obj/Debug/net8.0/ref/Spellcaster CLI.dll
+/Users/christbrou/Spellcaster-CLI/obj/Debug/net8.0/Spellcaster CLI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/christbrou/Spellcaster-CLI/obj/Debug/net8.0/Spellcaster CLI.AssemblyInfoInputs.cache
+/Users/christbrou/Spellcaster-CLI/obj/Debug/net8.0/Spellcaster CLI.AssemblyInfo.cs
+/Users/christbrou/Spellcaster-CLI/obj/Debug/net8.0/Spellcaster CLI.csproj.CoreCompileInputs.cache
+/Users/christbrou/Spellcaster-CLI/obj/Debug/net8.0/Spellcaster CLI.sourcelink.json
+/Users/christbrou/Spellcaster-CLI/obj/Debug/net8.0/Spellcaster CLI.dll
+/Users/christbrou/Spellcaster-CLI/obj/Debug/net8.0/refint/Spellcaster CLI.dll
+/Users/christbrou/Spellcaster-CLI/obj/Debug/net8.0/Spellcaster CLI.pdb

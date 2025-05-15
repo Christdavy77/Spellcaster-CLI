@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/Users/christbrou/Spellcaster-CLI/Spellcaster CLI.csproj": {}
+    "/Users/christbrou/Spellcaster-CLI/Spellcaster-CLI.csproj": {}
   },
   "projects": {
-    "/Users/christbrou/Spellcaster-CLI/Spellcaster CLI.csproj": {
+    "/Users/christbrou/Spellcaster-CLI/Spellcaster-CLI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/christbrou/Spellcaster-CLI/Spellcaster CLI.csproj",
-        "projectName": "Spellcaster CLI",
-        "projectPath": "/Users/christbrou/Spellcaster-CLI/Spellcaster CLI.csproj",
+        "projectUniqueName": "/Users/christbrou/Spellcaster-CLI/Spellcaster-CLI.csproj",
+        "projectName": "Spellcaster-CLI",
+        "projectPath": "/Users/christbrou/Spellcaster-CLI/Spellcaster-CLI.csproj",
         "packagesPath": "/Users/christbrou/.nuget/packages/",
         "outputPath": "/Users/christbrou/Spellcaster-CLI/obj/",
         "projectStyle": "PackageReference",
