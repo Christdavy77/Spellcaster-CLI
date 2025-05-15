@@ -26,6 +26,7 @@ class Program
             var requete = new
             {
                 model = "gpt-3.5-turbo",
+                max_token = 100,
                 messages = new[]
                 {
                     new { role = "system", content = "Tu es un correcteur d'orthographe. Corrige les fautes du texte sans ajouter d'explication." },
@@ -68,19 +69,26 @@ class Program
             Console.Write("\nTexte à traduire : ");
             string texteUtilisateur = Console.ReadLine();
  
-            string instruction = @"Tu es un traducteur. 
-                Traduis le texte fourni en :
-                - Anglais (US)
-                - Anglais (UK)
-                - Espagnol
-                Affiche chaque traduction sur une ligne, en précisant la langue entre crochets comme ceci :
-                [US] traduction ici
-                [UK] traduction ici
-                [ES] traduction ici";
+            string instruction = @"Tu es un traducteur";
+ 
+            Console.WriteLine("Choisissez une langue :");
+            Console.WriteLine("1 - Anglais (US)");
+            Console.WriteLine("2 - Anglais (UK)");
+            Console.WriteLine("3 - Espagnol");
+            Console.Write("Votre choix : ");
+            string choix = Console.ReadLine();
+ 
+            string langue = choix switch
+            {
+                "1" => "Anglais (US)",
+                "2" => "Anglais (UK)",
+                "3" => "Espagnol",
+            };
  
             var requete = new
             {
                 model = "gpt-3.5-turbo",
+                max_token = 200,
                 messages = new[]
                 {
                     new { role = "system", content = instruction },
@@ -131,6 +139,7 @@ class Program
         var requete = new
         {
             model = "gpt-3.5-turbo",
+            max_token = 1000,
             messages = new[]
             {
                 new { role = "system", content = instruction },

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Spellcaster-CLI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c761305979792565e18e51ebf71feea03423682a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea0ad32a60319f1f21794b6f14b9e1446b94c9e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Spellcaster-CLI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Spellcaster-CLI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
