@@ -8,7 +8,7 @@ class Program
 {
     static async Task Main()
     {
-        string openAiKey = "openAiKey"; 
+        string openAiKey = "APiKey"; 
         string apiUrl = "https://api.openai.com/v1/chat/completions";
  
         var httpClient = new HttpClient();
@@ -25,8 +25,8 @@ class Program
  
             var requete = new
             {
-                model = "gpt-3.5-turbo",
-                max_token = 100,
+                model = "gpt-4o-mini",
+                max_tokens = 100,
                 messages = new[]
                 {
                     new { role = "system", content = "Tu es un correcteur d'orthographe. Corrige les fautes du texte sans ajouter d'explication." },
@@ -69,26 +69,30 @@ class Program
             Console.Write("\nTexte à traduire : ");
             string texteUtilisateur = Console.ReadLine();
  
-            string instruction = @"Tu es un traducteur";
- 
             Console.WriteLine("Choisissez une langue :");
             Console.WriteLine("1 - Anglais (US)");
             Console.WriteLine("2 - Anglais (UK)");
             Console.WriteLine("3 - Espagnol");
             Console.Write("Votre choix : ");
             string choix = Console.ReadLine();
- 
+
             string langue = choix switch
             {
-                "1" => "Anglais (US)",
-                "2" => "Anglais (UK)",
-                "3" => "Espagnol",
+                "1" => "en-US",  
+                "2" => "en-GB",  
+                "3" => "es-ES",  
+                _ => "en-US"     
             };
- 
+
+            // Instruction MODIFIÉE pour inclure la langue choisie
+            string instruction = $"Tu es un traducteur de langue. " +
+                                $"Traduis ce texte en {langue} de manière précise et naturelle, " +
+                                "sans ajouter de commentaires.";
+            
             var requete = new
             {
-                model = "gpt-3.5-turbo",
-                max_token = 200,
+                model = "gpt-4o-mini",
+                
                 messages = new[]
                 {
                     new { role = "system", content = instruction },
@@ -133,13 +137,14 @@ class Program
         Console.Write("Titre de l'article : ");
         string titre = Console.ReadLine();
 
-        string instruction = @"Tu es un générateur de page web.
-        Crée une page HTML complète, simple et bien structurée pour un article selon le titre de l'article entrer par l'utilisateur.Affiche le titre dans un <h1>, le contenu dans un <p>. Mets un style CSS minimal pour rendre le tout lisible.";
+        string instruction = $@"
+            Tu es un ChatGPT, donc comporte-toi naturellement, mais tu as la particularité de pouvoir générer des fichiers HTML bien conçus avec un beau rendu, mais cela va dépendre du thème que l'utilisateur va devoir rentrer, et tu as tous les choix du frontend qui te convient et du contenu de ce fichier. je ne veux pas de commentaire de ta part et eviter de me donner un titre html ";
+            
+
  
         var requete = new
         {
-            model = "gpt-3.5-turbo",
-            max_token = 1000,
+            model = "gpt-4o-mini",
             messages = new[]
             {
                 new { role = "system", content = instruction },
@@ -171,16 +176,11 @@ class Program
         {
             Console.WriteLine($" Erreur API : {reponse.StatusCode}");
             Console.WriteLine(json);
-
-            Console.Write("\nVoulez-vous traduire un autre texte ? (o/n) : ");
-            string reponseUtilisateur = Console.ReadLine().ToLower();
-            if (reponseUtilisateur != "o") break;
         }
-        
+        Console.Write("\nVoulez-vous une autre génération traduire un autre texte ? (o/n) : ");
+        string reponseUtilisateur = Console.ReadLine().ToLower();
+        if (reponseUtilisateur != "o") break;
     }
     Console.WriteLine("\n OK à la prochaine chef");
 }
 }
-    
- 
- 
